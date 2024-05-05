@@ -75,7 +75,7 @@ int main() {
       */
 
 
-
+    /*
     // Second Maximum in an array
 
                 // eg  4 5 6 3 7     ans = 6
@@ -112,6 +112,35 @@ int main() {
                     
                 }
                 cout<<"The second highest number is : "<<second;              
+
+
+
+*/
+    // Missing number in sequenced array
+
+                    // eg [1 2 4 5 6]  ans = 3
+
+
+                    int n;
+                    int sum =0;
+                    int arr[1000];
+                    cout<<"Enter the size of an array: ";
+                    cin>>n;
+
+                    for(int i=0;i<n-1;i++){
+                        cin>>arr[i];
+                    }
+
+                    // Missing number
+                    for(int i=0;i<n-1;i++){
+                        sum +=arr[i];
+                    }
+
+                    int ans = n*(n+1)/2 - sum;
+
+                    cout<<ans;
+
+
 
                     return 0;
 }
